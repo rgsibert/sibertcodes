@@ -1,0 +1,40 @@
+// This is a simple code i have learned in my introduction to programming class.
+
+#include <stdio.h>
+
+int add(int x ,int y, int z); 
+
+int main()
+
+{
+	int a, b, c;
+	int sum;		// declares the variables used in the program
+	
+	printf("Enter the road miles to your start location : ");		//prompt to input the first number
+	
+	scanf("%d", &a);		//stores the first number in variable a
+	
+	printf("Enter the road miles to the first rest stop : ");		//prompt to input the second number
+	
+	scanf("%d", &b); 		//stores the second number in variable b
+	
+	printf("Enter the road miles to the final location : ");		//prompt to input the third number
+	
+	scanf("%d", &c); 		//stores the second number in variable c
+	
+	sum = add(a,b,c);		//function call
+	
+	printf("The sum of the total miles is : %d \n", sum);		//displays the sum after executing add function
+	
+	printf("The miles stored in the trip is : %d \n", sum);		//displys the value stored in the variable sum
+	
+	
+	return 0;
+	
+}
+
+int add(int x, int y, int z) //function definition
+{
+	return x+y+z;
+	
+}
